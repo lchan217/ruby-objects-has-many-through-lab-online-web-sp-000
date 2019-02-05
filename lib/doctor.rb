@@ -3,12 +3,15 @@ class Doctor #has many
   @@all = [] 
   def initialize(name)
     @name = name 
-    @@all << self 
+    @@all << self
+    @appointments = []
   end 
   def self.all 
     @@all
   end 
   def new_appointment(date, patient)
-    new_appt = Appointment(date )
+    new_appt = Appointment.new(date, patient, self)
+    @appointments << new_appt 
+    new_appt
   end 
 end 

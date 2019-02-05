@@ -12,6 +12,7 @@ class Patient
   def new_appointment(doctor, date)
     new_appt = Appointment.new(date, self, doctor)
     @appointments << new_appt
+    new_appt 
   end 
   def appointments #reader method
     @appointments

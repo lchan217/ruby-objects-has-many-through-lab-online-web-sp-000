@@ -1,4 +1,4 @@
-class Appointment
+class Appointment #belongs to 
   attr_accessor :date, :patient, :doctor
   @@all = []
   

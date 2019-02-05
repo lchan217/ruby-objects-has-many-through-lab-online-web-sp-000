@@ -1,4 +1,4 @@
-class Doctor 
+class Doctor #has many 
   attr_accessor :name 
   @@all = [] 
   def initialize(name)

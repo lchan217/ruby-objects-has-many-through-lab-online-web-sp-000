@@ -17,4 +17,8 @@ class Patient
   def appointments #reader method
     @appointments
   end 
+  def doctors 
+    @appointments.each do |doctors|
+      
+  end 
 end 

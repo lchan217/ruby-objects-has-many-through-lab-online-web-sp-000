@@ -9,6 +9,6 @@ class Doctor #has many
     @@all
   end 
   def new_appointment(date, patient)
-    
+    new_appt = Appointment(date )
   end 
 end 

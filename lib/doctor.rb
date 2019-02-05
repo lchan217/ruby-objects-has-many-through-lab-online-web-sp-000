@@ -15,4 +15,9 @@ class Doctor #has many
     @appointments << new_appt 
     new_appt
   end 
+  def patients
+    @appointments.map do |appts|
+      appts.patient
+    end 
+  end 
 end 
